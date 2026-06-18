@@ -1,0 +1,8 @@
+# Avoid committing secrets and temporary outputs
+*.log
+*.json
+!assets/sample_config.json
+qqmail_digest_state.json
+*.pyc
+__pycache__/
+

@@ -1,0 +1,84 @@
+{
+  "qqmail": {
+    "imap_host": "imap.qq.com",
+    "imap_port": 993,
+    "email": "your@qq.com",
+    "auth_code_env": "QQMAIL_AUTH_CODE",
+    "auth_code": "",
+    "mailbox": "INBOX",
+    "poll_seconds": 60,
+    "fetch_limit": 20
+  },
+  "state_path": "%USERPROFILE%\\Documents\\QQmail\\qqmail_digest_state.json",
+  "desktop_txt": {
+    "enabled": true,
+    "folder": "%USERPROFILE%\\Desktop\\txt",
+    "daily_file_pattern": "%Y%m%d.txt"
+  },
+  "summary": {
+    "provider": "dashscope",
+    "openai_model": "gpt-4.1-mini",
+    "max_chars": 4000,
+    "language": "zh-CN",
+    "dashscope": {
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "api_key": "",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "models": [
+        "qwen-turbo",
+        "qwen-plus",
+        "qwen-plus-latest",
+        "qwen-max"
+      ],
+      "timeout_seconds": 45
+    }
+  },
+  "spam_filter": {
+    "skip_folders": [
+      "垃圾箱",
+      "Junk",
+      "Spam"
+    ],
+    "subject_keywords": [
+      "发票代开",
+      "贷款",
+      "博彩",
+      "中奖",
+      "返利",
+      "推广",
+      "unsubscribe",
+      "casino",
+      "loan"
+    ],
+    "sender_keywords": [
+      "noreply-spam",
+      "promo",
+      "marketing"
+    ],
+    "min_score_to_skip": 2
+  },
+  "delivery": {
+    "wecom_robot_webhook": "",
+    "serverchan_sendkey": "",
+    "pushplus_token": "",
+    "custom_webhook_url": ""
+  },
+  "date_filter": {
+    "enabled": true,
+    "mode": "local_today"
+  },
+  "llm": {
+    "provider": "dashscope",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "api_key": "",
+    "models": [
+      "qwen-turbo",
+      "qwen-plus",
+      "qwen-plus-latest",
+      "qwen-max"
+    ],
+    "timeout_seconds": 45,
+    "max_chars": 4000
+  }
+}
